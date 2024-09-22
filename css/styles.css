@@ -22,7 +22,23 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
-/* comon*/
+img {
+  display: block;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*======= comon =========*/
 
 .container {
   max-width: 1158px;
@@ -30,7 +46,12 @@ h1, h2, h3, h4, h5, h6, p {
   margin: 0 auto;
 }
 
-/* header */
+.section-paddings {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/*==== header =====*/
 
 .page-header{
   border-bottom: 1px solid #e7e9fc;
@@ -107,20 +128,37 @@ h1, h2, h3, h4, h5, h6, p {
   color: #404bbf;
 }
 
-.section-title {
+  /*==========HERO STYLES======*/
+.hero-section {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2e2f42;
 }
 
-.page-title {
+.hero-container {
+  
+  padding: 188px 316px;
+  
+}
+
+.main-title {
+  
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  margin-bottom: 48px;
 }
 
-.button {
+.hero-content-wrapper {
+  display: flex;
+  align-content:center;
+}
+
+.order-service {
   background: #4d5ae5;
   font-weight: 500;
   font-size: 16px;
@@ -128,12 +166,53 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.04em;
   color: #fff;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.button:hover,
-.button:focus {
+.order-service:hover,
+.order-service:focus {
   background-color: #404bbf;
 }
+
+/*=========benefits==========*/
+
+.benefits-section {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.benefits-container {
+ 
+}
+.benefits-list {
+  display: flex;
+  column-gap: 24px;
+}
+.benefits-list-item {
+  width: calc((100%-3*24px)/3);
+}
+
+.benefits-list-title {
+  font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.benefits-list-text {
+font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
 .title {
   font-weight: 500;
   font-size: 20px;
@@ -149,12 +228,12 @@ h1, h2, h3, h4, h5, h6, p {
   letter-spacing: 0.02em;
   color: #434455;
 }
-
-.section-team {
+/*=====TEAM====*/
+.team-section {
   background-color: #f4f4fd;
 }
 
-.team-list-title {
+.team-section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -162,9 +241,10 @@ h1, h2, h3, h4, h5, h6, p {
   text-transform: capitalize;
   text-align: center;
   color: #2e2f42;
+  margin-bottom: 72px;
 }
 
-.team-background-color {
+.team-list-item {
   background-color: #ffffff;
 }
 .team-text,
