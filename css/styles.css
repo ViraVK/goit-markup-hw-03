@@ -137,12 +137,14 @@ img {
 }
 
 .hero-container {
+  
   padding-top: 188px;
   padding-bottom: 188px;
-  text-align: center;
 }
 
 .main-title {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 496px;
   font-weight: 700;
   font-size: 56px;
