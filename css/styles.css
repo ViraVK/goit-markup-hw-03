@@ -139,10 +139,7 @@ img {
 .hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
-  padding-left: 316px;
-  padding-right: 316px;
-  
-  
+  text-align: center;
 }
 
 .main-title {
